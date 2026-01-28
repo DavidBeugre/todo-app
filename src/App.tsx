@@ -119,28 +119,28 @@ function finishSelected () {
          <div className="flex flex-wrap gap-4">
           <button
             className={`btn btn-soft ${filter === "Tous" ? "btn-primary" : ""}`}
-           // on ne peut pas metrre directement un setteur dans onclick donc on passe par fonc anonyme
+           
             onClick={() => setFilter("Tous")}
           >
             Tous({totalCount})
           </button>
           <button
             className={`btn btn-soft ${filter === "Urgente" ? "btn-primary" : ""}`}
-           // on ne peut pas metrre directement un setteur dans onclick donc on passe par fonc anonyme
+           
             onClick={() => setFilter("Urgente")}
           >
             Urgente ({urgentCount})
           </button>
           <button
             className={`btn btn-soft ${filter === "Moyenne" ? "btn-primary" : ""}`}
-           // on ne peut pas metrre directement un setteur dans onclick donc on passe par fonc anonyme
+        
             onClick={() => setFilter("Moyenne")}
           >
             Moyenne ({mediumtCount})
           </button>
           <button
             className={`btn btn-soft ${filter === "Basse" ? "btn-primary" : ""}`}
-           // on ne peut pas metrre directement un setteur dans onclick donc on passe par fonc anonyme
+           
             onClick={() => setFilter("Basse")}
           >
             Basse ({lowCount})
